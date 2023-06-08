@@ -7,19 +7,20 @@ export const faq = [
   },
   {
     id: 2,
-    question: 'Why did you make this?',
-    answer: 'Everytime I start a new project I find myself looking for the same components. I wanted to create a bare bones template that I could use to bootstrap every new project I start..',
+    question: 'Why focus on Security?',
+    answer: 'As a developer, focusing on security is crucial for several important reasons:  Security breaches can lead to unauthorized access and compromise sensitive user information such as personal details, login credentials, financial data, and more.',
+    link: 'https://jamesturner.dev/blog/why-vue',
   },
   {
     id: 3,
-    question: 'Can anyone use it?',
-    answer: "Yes, it's open source and free to use. If you want to make a contribution, please do! Just fork the repo and submit a pull request.",
+    question: 'Whats the Ops Part?',
+    answer: "The operations aspect in DevOps involves managing and maintaining the software systems and infrastructure required to deploy, run, and monitor applications in production environments.",
     link: 'https://github.com/jamesturner-dev/front-end.us',
   },
   {
     id: 4,
-    question: 'Wait, wait I have more questions!',
-    answer: 'Click on over to the Help page and I will do my best to answer your questions.',
+    question: 'Have More Questions?',
+    answer: 'Click on over to the Help page where I do my best to answer previous questions I have received.',
     link: '/page/help',
   },
 

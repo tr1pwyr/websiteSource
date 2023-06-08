@@ -5,7 +5,7 @@
         <span class="sr-only">Skills and Availability</span>
         <CodeBracketIcon class="h-6 w-5 text-neutral-400" aria-hidden="true" />
       </dt>
-      <dd class="text-sm font-medium leading-6 text-neutral-600">Node / JS / Python</dd>
+      <dd class="text-sm font-medium leading-6 text-neutral-500">Node / JS / Python</dd>
     </div>
     <div class="mt-4 flex w-full flex-none gap-x-4">
       <dt class="flex-none">
@@ -30,6 +30,7 @@
 import {
   CalendarDaysIcon,
   CreditCardIcon,
-  CodeBracketIcon
+  CodeBracketIcon,
+  
 } from '@heroicons/vue/20/solid'
 </script>

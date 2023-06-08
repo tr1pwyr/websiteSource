@@ -1,12 +1,9 @@
-export const data = {
-  subTotal: '$8,800.00',
-  tax: '$1,760.00',
-  total: '$10,560.00',
+export const projects = {
   items: [
     {
       id: 1,
       title: 'Twitter Scraping',
-      description: 'Inventing new ways to get twitter data.',
+      description: 'Scraping GB of Twitter data.',
       tech: 'Python',
       details: 'https://github.com/tr1pwyr/tweetData',
       category: 'Data',
@@ -15,21 +12,21 @@ export const data = {
       id: 2,
       title: 'Headlin3s',
       description: 'Headlin3s Alternative News Headlines.',
-      tech: 'Node / JS',
+      tech: 'Vue / Node',
       details: 'https://headlin3s.com',
       category: 'Development',
     },
     {
       id: 3,
       title: 'Secure Network',
-      description: 'Gateway to a secure network.',
+      description: 'Setup Gateway to a secure network.',
       tech: 'Linux',
       details: 'https://github.com/tr1pwyr/tweetData',
       category: 'Security',
     },
     {
       id: 4,
-      title: 'Vue Frontend',
+      title: 'Front-End.us',
       description: 'A Vue3 Frontend Template.',
       tech: 'Vue 3',
       details: 'https://front-end.us/',
@@ -37,10 +34,10 @@ export const data = {
     },
     {
       id: 5,
-      title: 'Ambiguous Redirect',
-      description: 'AI Powered Blog.',
-      tech: 'Python',
-      details: 'https://ambiguousredirect.com/',
+      title: '[wL] wLog.app',
+      description: 'Towards a more perfect AI Powered Blog',
+      tech: 'Javascript',
+      details: 'https://wlog.app/',
       category: 'Development',
     },
     {

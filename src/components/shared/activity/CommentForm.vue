@@ -4,11 +4,12 @@
       src="https://imagedelivery.net/jUv0WjkQAcJxE0kRYIap3Q/16789da8-89a9-44d5-85e2-bd6001c68a00/public" 
       alt="Tr1pWyr"
       class="h-6 w-6 flex-none rounded-full bg-neutral-50" />
-    <form action="#" class="relative flex-auto">
+    <form action="https://formsubmit.co/e92821a1dd52d6a49a49a93a4c5b11f2" method="POST" class="relative flex-auto">
+      <input type="hidden" name="_next" value="https://wlog.app">
       <div
-        class="overflow-hidden rounded-lg pb-12 shadow-sm ring-1 ring-inset ring-neutral-700 focus-within:ring-2 focus-within:ring-red-600">
-        <label for="comment" class="sr-only">Add your comment</label>
-        <textarea rows="2" name="comment" id="comment"
+        class="overflow-hidden rounded-lg pb-12 shadow-sm ring-1 ring-inset ring-neutral-700 focus-within:ring-2 focus-within:ring-red-900/90">
+        <label for="comment" class="sr-only">Say Hey</label>
+        <textarea rows="2" name="helloFromTr1pwyr" id="comment"
           class="block w-full resize-none border-0 bg-transparent py-1.5 text-neutral-600 placeholder:text-neutral-400 focus:ring-0 sm:text-sm sm:leading-6"
           placeholder="mssg me" />
       </div>
@@ -69,6 +70,7 @@
 </template>
 
 <script setup>
+import Swal from "sweetalert2";
 import { ref } from 'vue'
 import {
   Listbox,
@@ -77,7 +79,6 @@ import {
   ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
-
 
 import {
   CalendarIcon,
@@ -98,6 +99,35 @@ const moods = [
   { name: "Nope", value: null, icon: XMarkIconMini, iconColor: 'text-neutral-400', bgColor: 'bg-transparent' },
 ]
 
+const comment = ref(null)
+
 const selected = ref(moods[5])
 
+const handleSubmit = () => {
+  if (comment.value=='' || !comment.value || comment.value==null ) {
+    Swal.fire({
+      title: 'Oops...',
+      text: 'You forgot to say something!',
+      icon: 'error',
+      confirmButtonText: 'Ok',
+      confirmButtonColor: "#000",
+    })
+  } else {
+    Swal.fire({
+    title: "Thanks for the feedback!",
+    text: "I'll get back to you as soon as possible.",
+    confirmButtonText: "Ok",
+    confirmButtonColor: "#000",
+  });
+  } 
+};
+
 </script>
+
+<style>
+.swal2-modal {
+  background-color: rgba(82,82,82, 0.1);
+  border: 1px solid #4b5563;
+  color: #f9fafb;
+}
+</style>
