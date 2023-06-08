@@ -12,10 +12,10 @@
       </nav>
 
       <div class="flex flex-1 items-center justify-end gap-x-8">
-        <button type="button" class="-m-2.5 p-2.5 text-neutral-400 hover:text-neutral-500">
+        <!-- <button type="button" class="-m-2.5 p-2.5 text-neutral-400 hover:text-neutral-500">
           <span class="sr-only">View notifications</span>
           <BellIcon class="h-6 w-6" aria-hidden="true" />
-        </button>
+        </button> -->
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your profile</span>
           <img class="h-8 w-8 rounded-full"
@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import MobileMenu from '../shared/MobileMenu.vue'
-import { BellIcon } from '@heroicons/vue/24/outline'
+import MobileMenu from './header/MobileMenu.vue'
+// import { BellIcon } from '@heroicons/vue/24/outline'
 import { navigation } from '../js/navigation.js'
 </script>

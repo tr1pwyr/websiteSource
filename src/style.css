@@ -2,26 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "JetBrains Mono";
-  src:
-    url("./assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format('font-truetype');
-} */
-
 @font-face {
   font-family: 'jetbrains_monoregular';
   src: url('./assets/fonts/jetbrainsmono-variablefont_wght-webfont.woff2') format('woff2'),
-       url('./assets/fonts/jetbrainsmono-variablefont_wght-webfont.woff') format('woff');
+    url('./assets/fonts/jetbrainsmono-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 :root {
   --slate: rgb(115 115 115);
-  --red: #bc1f1f;
-  --pink: rgb(219, 143, 142);
-  --offWhite: #eddfda;
+  --red: #701f1c;
 }
 
 body {
@@ -38,18 +29,10 @@ a:hover {
   color: #e1d0cf;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--slate);
-  line-height: 2rem;
-  letter-spacing: -0.025em;
 }
-
 
 h1 {
   font-size: 1.5rem;
@@ -85,187 +68,39 @@ h5 {
   letter-spacing: -0.025em;
 }
 
-
 .footerItem {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  color: rgb(82,82,82);
+  color: rgb(82, 82, 82);
 }
 
 .footerItem:hover {
   color: #fcfcfc;
 }
 
-.formInput {
-  display: block;
-  position: relative;
-  margin-bottom: 0.5rem;
-  width: 100%;
-  border: 1px solid #dadbdc;
-  border-radius: 0.33rem;
-  padding: .5rem .75rem;
-  color: rgb(41, 41, 41);
-  background-color: rgb(255 255 255);
-}
-
-
-.bigButton {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 0.375rem;
-  border-width: 1px;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.smallButton {
-  display: inline-block;
-  border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  padding: 6px 1rem;
-  font-size: .9rem;
-  font-weight: 600;
-  line-height: 1.25rem;
-}
-
-.smallButton:hover {
-  color: rgb(255, 255, 255);
-  background-color: var(--red);
-}
-
-.primary {
-  background-color: var(--red);
-  align-items: center;
-  color: rgb(255 255 255);
-  display: inline-block;
-  border-radius: 0.5rem;
-  padding: 5px 1rem;
-  font-size: .9rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-  border: 1px solid var(--red);
-}
-
-.primary:hover {
-  background-color: var(--red);
-  color: rgb(255 255 255);
-  border-radius: 0.5rem;
-  border: transparent;
-  border: 1px solid var(--red);
-}
-
-.primaryText {
-  color: var(--slate) !important;
-}
-
-.secondary {
-  display: inline-block;
-  border-radius: 0.5rem;
-  padding: 5px 1rem;
-  font-size: .9rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  color: rgb(156 163 175);
-  border: 1px solid rgb(156 163 175);
-}
-
-.secondary:hover {
-  background-color: var(--red);
-  color: #fff;
-  border: 1px solid var(--red);
-}
-
-
-.selectList {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-radius: 0.375rem;
-  border-width: 1px;
-  border-color: rgb(229 231 235);
-}
-
-/* Header Stuff */
-
-.theHeading {
-  margin-top: 2px;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  color: rgb(107 114 128);
-}
-
-#headerMenu {
-  position: relative;
-  border-bottom: 1px solid var(--slate);
-  padding-bottom: 1.25rem;
-}
-
-
-.more {
-  margin-top: .25rem;
-  text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: var(--slate);
-}
-
-.disclosureButton {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  border-radius: 0.5rem;
-  background-color: rgb(56 189 248);
-  color:#fff;
-  font-weight: 500;
-  text-align: left;
-  font-size: 0.875rem/* 14px */;
-  line-height: 1.25rem/* 20px */;
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.disclosureButton:hover {
-  background-color: rgb(52 211 153);
-}
-
 blockquote {
   margin-bottom: 5rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 48rem/* 768px */;
+  max-width: 48rem;
   text-align: center;
-  font-size: 1.5rem/* 24px */;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.75rem;
   color: var(--slate);
 }
 
-p{
-  color: var(--slate);
-}
-
-.quote {
-  margin-top: 0.75rem;
-  text-align: center;
-  font-size: 1.125rem/* 18px */;
-  line-height: 1.75rem/* 28px */;
-  font-weight: 500;
+p,  .primaryText {
   color: var(--slate);
 }
 
 .avatar {
   margin-left: auto;
   margin-right: auto;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 3.3rem;
+  width: 3.3rem;
   border-radius: 9999px;
 }
 
@@ -273,5 +108,3 @@ p{
   height: 1.75rem;
   width: 1.75rem;
 }
-
-

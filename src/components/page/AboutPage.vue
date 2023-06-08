@@ -1,6 +1,6 @@
 <template>
   <div class="relative mx-auto py-5 overflow-hidden">
-    <PageHeader :content="content" />
+    <!-- <PageHeader :content="content" /> -->
     <div class="mx-auto sm:py-10">
       <PageQuote />
       <PageFaq />
@@ -13,7 +13,7 @@ import PageHeader from './pageSections/PageHeader.vue';
 import PageQuote from './pageSections/PageQuote.vue';
 import PageFaq from './pageSections/PageFaq.vue';
 const content = {
-  heading: "About front-end.us",
-  subHeading: "What's this all about then?"
+  heading: "About Tr1pWyr",
+  subHeading: "Digital Development, Security, and Operations"
 }
 </script>

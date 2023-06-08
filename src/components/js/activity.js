@@ -12,6 +12,6 @@ export const activity = [
     date: '3d ago',
     dateTime: '2023-01-23T15:56',
   },
-  { id: 5, type: 'viewed', person: { name: 'Alex Curren' }, date: '2d ago', dateTime: '2023-01-24T09:12' },
-  { id: 6, type: 'paid', person: { name: 'Alex Curren' }, date: '1d ago', dateTime: '2023-01-24T09:20' },
+  { id: 5, type: 'viewed', person: { name: 'JamesTurner-Dev' }, date: '2d ago', dateTime: '2023-01-24T09:12' },
+  { id: 6, type: 'commit', person: { name: 'Tr1pwyr' }, date: '1d ago', dateTime: '2023-01-24T09:20' },
 ]
